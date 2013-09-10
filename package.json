@@ -1,0 +1,21 @@
+{
+  "name": "gitnode",
+  "version": "0.1.0",
+  "description": "a simple web-based browser for your Git repositories",
+  "main": "manage.js server",
+  "scripts": {
+    "test": "manage.js test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quafzi/gitnode.git"
+  },
+  "keywords": [
+    "git"
+  ],
+  "author": "Thomas Birke <tbirke@netextreme.de>",
+  "license": "OSL 3.0",
+  "bugs": {
+    "url": "https://github.com/quafzi/gitnode/issues"
+  }
+}
