@@ -1,0 +1,8 @@
+extends ../../../core/page/views/index
+
+block main
+  h2 #{repos.length} Repositories
+  ul.repos
+    each repo in repos
+      li
+        a(href="/#{repo}") #{repo}

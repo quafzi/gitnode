@@ -1,0 +1,7 @@
+extends ../../../core/page/views/index
+
+block main
+  h2 That's what happened...
+  ul
+    for line, no in log
+      li #{line} / #{no}

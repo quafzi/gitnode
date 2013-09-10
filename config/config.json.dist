@@ -1,0 +1,27 @@
+{
+  "env": "development",
+  "server": {
+    "port": 3333
+  },
+  "gitroot": "/tmp/git/",
+  "security": {
+    "cookiePath": "your.git",
+    "secret": "<changeme>",
+    "iterations": 1,
+    "keylen": 100,
+    "ssl": {
+      "outputDir": "var/ssl",
+      "mail": "admin@localhost"
+    }
+  },
+  "style": {
+    "urlPrefix": "/style",
+    "combine": false,
+    "combineName": "git.css"
+  },
+  "script": {
+    "urlPrefix": "/script",
+    "combine": false,
+    "combineName": "git.js"
+  }
+}

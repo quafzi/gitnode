@@ -1,0 +1,24 @@
+doctype 5
+html(ng-app='gitnode')
+  head
+    title Your node.js-based Git repository browser
+    //[if lt IE 9]
+      script(src="/scripts/html5shiv.js")
+    if styles
+      each style in styles
+        link(href="#{config.style.urlPrefix}#{style}", rel='stylesheet', type='text/css')
+  body
+    .container
+      block content
+  if scripts
+    each script in scripts 
+      script(src="#{config.script.urlPrefix}#{script}")
+  if templates
+    each template, name in templates
+      script(type="text/ng-template", id="#{name}")!= template
+  link(
+    href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700|Open+Sans+Condensed:300,300italic,700'
+    rel='stylesheet' 
+    type='text/css'
+  )
+
