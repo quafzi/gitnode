@@ -25,6 +25,7 @@
     "gleeman-stylus": "~0.2.2",
     "gleeman-config": "~0.1.0",
     "lodash": "~1.3.1",
-    "async": "~0.2.9"
+    "async": "~0.2.9",
+    "git": "~0.1.5"
   }
 }
