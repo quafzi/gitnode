@@ -1,7 +1,13 @@
 extends ../../../core/page/views/index
 
 block main
-  h2 That's what happened...
-  ul
-    for line, no in log
-      li #{line} / #{no}
+  h2 #{history.length} Commits in Repository #{repo}
+  if error
+    .error #{error}
+  ul.commits
+    each commit in history
+      li
+        span.sha= commit.sha
+        span.author_name= commit.author.name
+        span.author_email= commit.author.email
+        span.authored_date= commit.authored_date

@@ -34,18 +34,17 @@ module.exports = {
         ], loadDone);
       });
     }
-  /*
   ],
   loadRepo: [
     'gleeman:config:base',
     'gleeman:require:git',
     function(done, config, git) {
       done(null, function(dir, logDone) {
-        var repo = new git.Git(config.gitroot + '/' + dir);
-        repo.log(null, null, {}, logDone);
+        new git.Repo(config.gitroot + '/' + dir, {is_bare: true}, function(err, repo) {
+          repo.log('master', '.', {}, logDone)
+        });
       });
     }
-    */
   ]
 }
 
